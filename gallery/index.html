@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Media Gallery - KU Jiu-Jitsu Club</title>
+		<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="ku jiu-jitsu, ku jiu jitsu, ku bjj, lawrence jiu jitsu, lawrence bjj, lawrence, kansas jiu jitsu, kansas bjj, university of kansas, bjj, grappling, wrestling, kansas wrestling, ku wrestling, martial arts">
+<link rel="stylesheet" type="text/css" href="/index.css">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">	</head>
+	<body>
+		<div class="kujj_all">
+		<h1 class="kujj_title">KU Jiu-Jitsu Club</h1>
+<div class="kujj_nav_div">
+	<ul class="kujj_nav">
+		<li class="kujj_navitem"><a href="/">HOME</a></li>
+		<li class="kujj_navitem"><a href="/about">ABOUT</a></li>
+		<li class="kujj_navitem"><a href="/gallery">GALLERY</a></li>
+		<li class="kujj_navitem"><a href="/current-students">STUDENTS</a></li>
+		<li class="kujj_navitem"><a href="/contact">CONTACT</a></li>
+	</ul>
+</div>
+		<script>
+(function() {
+	var elements = document.querySelectorAll('img[data-src]');
+	var index = 0;
+	var lazyLoad = function() {	
+		if(index >= elements.length) return;
+		var item = elements[index];	
+		if((this.scrollY + this.innerHeight) > item.offsetTop) {			
+			var src = item.getAttribute("data-src");
+			item.src = src;
+			item.addEventListener('load', function() {
+				item.removeAttribute('data-src');    	 
+			});     	
+			index++;
+			lazyLoad();
+		}
+	};
+	var init = function() {
+		window.addEventListener('scroll', lazyLoad);
+		lazyLoad();
+	};
+	return init();
+})();
+</script>
+		<div class="kujj_content_div">
+			<h1 class="kujj_page_title">Media Gallery</h1>
+			<div class="kujj_imagegallery">
+				<a href="/assets/images/gallery/kujj_0001_fullres.jpg" class="kujj_image"><img width="100%" src="/assets/images/gallery/kujj_0001.jpg"/></a>
+				<a href="/assets/images/gallery/kujj_0002_fullres.jpg" class="kujj_image"><img width="100%" src="/assets/images/gallery/kujj_0002.jpg"/></a>
+				<a href="/assets/images/gallery/kujj_0003_fullres.jpg" class="kujj_image"><img width="100%" src="/assets/images/gallery/kujj_0003.jpg"/></a>
+				<a href="/assets/images/gallery/kujj_0004_fullres.jpg" class="kujj_image"><img width="100%" src="/assets/images/gallery/kujj_0004.jpg"/></a>
+				<a href="/assets/images/gallery/kujj_0005_fullres.jpg" class="kujj_image"><img width="100%" src="/assets/images/gallery/kujj_0005.jpg"/></a>
+				<a href="/assets/images/gallery/kujj_0006_fullres.jpg" class="kujj_image"><img width="100%" src="/assets/images/gallery/kujj_0006.jpg"/></a>
+				<a href="/assets/images/gallery/kujj_0007_fullres.jpg" class="kujj_image"><img width="100%" src="/assets/images/gallery/kujj_0007.jpg"/></a>
+				<a href="/assets/images/gallery/kujj_0008_fullres.jpg" class="kujj_image"><img width="100%" src="/assets/images/gallery/kujj_0008.jpg"/></a>
+				<a href="/assets/images/gallery/kujj_0009_fullres.jpg" class="kujj_image"><img width="100%" src="/assets/images/gallery/kujj_0009.jpg"/></a>
+				<a href="/assets/images/gallery/kujj_0010_fullres.jpg" class="kujj_image"><img width="100%" src="/assets/images/gallery/kujj_0010.jpg"/></a>
+				<a href="/assets/images/gallery/kujj_0011_fullres.jpg" class="kujj_image"><img width="100%" src="/assets/images/gallery/kujj_0011.jpg"/></a>
+				<a href="/assets/images/gallery/kujj_0012_fullres.jpg" class="kujj_image"><img width="100%" src="/assets/images/gallery/kujj_0012.jpg"/></a>
+				<a href="/assets/images/gallery/kujj_0013_fullres.jpg" class="kujj_image"><img width="100%" src="/assets/images/gallery/kujj_0013.jpg"/></a>
+				<a href="/assets/images/gallery/kujj_0014_fullres.jpg" class="kujj_image"><img width="100%" src="/assets/images/gallery/kujj_0014.jpg"/></a>
+				<a href="/assets/images/gallery/kujj_0015_fullres.jpg" class="kujj_image"><img width="100%" src="/assets/images/gallery/kujj_0015.jpg"/></a>
+			</div>
+			<p align="center">Pages:</p>
+			<p align="center" class="monospace"><a href=".">[1]</a> <a href="page2.html">[2]</a></p>
+		</div>
+		
+<div class="kujj_footer">
+	<ul class="kujj_footer_content">
+		<li class="kujj_footeritem">
+		<p class="tight kujj_footertitle">Contact Us</p>
+		<p class="tight kujj_footertext">1740 Watkins Center Dr.</p>
+		<p class="tight kujj_footertext">Lawrence, KS 66045</p>
+		<p class="tight kujj_footertext">Email: jclement (at) ku (dot) edu</p>
+		</li>
+		<li class="kujj_footeritem">
+		<p class="tight kujj_footertitle">Practice Schedule</p>
+		<p class="tight kujj_footertext"><b>Tuesdays:</b> 6:00p-8:00p</p>
+		<p class="tight kujj_footertext"><b>Thursdays:</b> 6:00p-8:00p</p>
+		<p class="tight kujj_footertext"><b>Fridays:</b> 5:00p-7:00p</p>
+		</li>
+		<li class="kujj_footeritem">
+		<p class="tight kujj_footertitle">Our Links</p>
+		<p class="tight kujj_footertext"><a href="https://rockchalkcentral.ku.edu/organization/kujj">Rock Chalk Central</a></p>
+		<p class="tight kujj_footertext"><a href="https://www.instagram.com/kujj_club/">Instagram</a></p>
+		<p class="tight kujj_footertext"><a href="https://ku.dserec.com/online/clubsports_widget/club/10/roster">DoSportsEasy KU</a></p>
+		</li>
+	</ul>
+	<br/>
+	<div class="kujj_footer_content">
+		<img src="/assets/images/kujj-logo-color.svg" height="100px"/>
+	</div>
+	<p class="kujj_footertext">Copyright © 2024 KU Jiu-Jitsu Club. All rights reserved.</p>
+</div>	
+		</div>
+	</body>
+</html>
