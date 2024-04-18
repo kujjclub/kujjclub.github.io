@@ -1,0 +1,536 @@
+:root {
+  touch-action: pan-x pan-y;
+  height: 100% 
+}
+
+@font-face {
+    font-family: "pinnacle";
+    src: url("assets/fonts/pinnacle.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "redhatdisplay";
+    src: url("assets/fonts/redhatdisplay.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "cmu-mono";
+    src: url("assets/fonts/cmuntt.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "cmu-sans";
+    src: url("assets/fonts/cmunss.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "cmu-serif";
+    src: url("assets/fonts/cmunrm.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "cmu-serif-bold";
+    src: url("assets/fonts/cmunbx.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "freshman";
+    src: url("assets/fonts/Freshman.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "georgia-bold";
+    src: url("assets/fonts/georgiab.woff2") format('woff2');
+}
+
+body {
+	margin: 0;
+}
+
+.kujj_all {
+  position: relative;
+  overflow: hidden;
+}
+
+.kujj_all::before {
+  content: "";
+  position: absolute;
+  width: 500%;
+  height: 500%;
+  top: -250%;
+  left: -250%;
+  z-index: -1;
+  background-image: url("assets/images/shadow.svg");
+  background-repeat: repeat !important;
+  background-size: 40em;
+  transform: rotate(-10deg);
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button.kujj_rollTimeBanner_button {
+  background-color: #0051BA;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;	
+  font-family: "cmu-sans";
+  cursor: pointer;
+}
+
+button.kujj_rollTimeBanner_button:hover {
+  background-color: #004091;
+}
+
+button.kujj_errorBanner_button {
+  background-color: #e8000d;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;	
+  font-family: "cmu-sans";
+  cursor: pointer;
+}
+
+button.kujj_errorBanner_button:hover {
+  background-color: #B90009;
+}
+
+
+h1.kujj_title {
+	font-family: "freshman";
+	font-weight: normal;
+	font-size : clamp(2rem, 10vw, 5rem);
+	margin-left: 0em;
+	margin-right: 0em;
+	margin-top: 0.5em;
+	margin-bottom: 0em;
+	text-align: center;
+	color: #0051ba;
+	text-size-adjust: auto;
+}
+
+h1.kujj_page_title {
+	font-family: "redhatdisplay";
+}
+
+h1.kujj_rollTimeBanner_title {
+	font-family: "redhatdisplay";
+	font-weight: normal;
+}
+
+h1.kujj_errorBanner_title {
+	font-family: "redhatdisplay";
+	font-weight: normal;
+}
+
+h2 {
+	font-family: "redhatdisplay";
+	font-weight: normal;
+}
+
+h3 {
+	font-family: "redhatdisplay";
+	font-weight: normal;
+}
+
+h2.kujj_errorBanner_subtitle {
+	font-family: "redhatdisplay";
+}
+
+input[type=number] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: "cmu-mono";
+  font-size: 18px;
+  -moz-appearance: textfield;
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: "cmu-mono";
+  font-size: 18px;
+  -moz-appearance: textfield;
+}
+
+input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: "cmu-mono";
+  font-size: 18px;
+  -moz-appearance: textfield;
+}
+
+input[type=email] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: "cmu-mono";
+  font-size: 18px;
+  -moz-appearance: textfield;
+}
+
+input[type=submit].kujj_submitButton {
+  background-color: #0051BA;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;	
+  font-family: "redhatdisplay";
+  cursor: pointer;
+}
+input[type=submit].kujj_submitButton:hover {
+  background-color: #004091;
+}
+
+p.kujj_rollTimeBanner_text {
+	font-family: "redhatdisplay";
+	font-weight: normal;
+}
+
+
+ul.kujj_nav {
+	list-style-type: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+ul.kujj_footer_content {
+	list-style-type: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+li.kujj_footeritem {
+	display: inline-block;
+	text-align: center;
+	padding: 15px;
+	font-family: "redhatdisplay", sans-serif;
+}
+
+div.kujj_inline {
+	display: inline-block;
+	padding: 30px;
+}
+
+li.kujj_navitem {
+	display: inline;
+	font-size : 1.5em;
+	text-align: center;
+	padding: 15px;
+	font-family: "pinnacle", sans-serif;
+	width: auto;
+}
+
+li.kujj_navitem a {
+	text-decoration: none;
+	color: #003459;
+}
+
+li.kujj_navitem a:visited {
+	text-decoration: none;
+	color: #003459;
+}
+
+div.kujj_nav_div {
+	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	border-top: 3px;
+	border-top-style: solid;
+	border-top-color: #8e9fbc;
+	border-bottom: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #8e9fbc;
+}
+
+div.kujj_content_div {
+	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60em;	
+	padding: 1em;
+	border-left: 3px;
+	border-left-style: solid;
+	border-left-color: #8e9fbc;
+	border-right: 3px;
+	border-right-style: solid;
+	border-right-color: #8e9fbc;
+	border-bottom: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #8e9fbc;
+}
+
+div.kujj_content_div.no_bottom_border {
+	border-bottom: 0px;
+	border-bottom-style: none;
+}
+
+div.kujj_rollTimeBanner_div {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60em;	
+	outline: solid #0051ba;
+	background-color: #dde5ed;
+}
+
+div.kujj_rollTimeBanner_content {
+	margin: 10px;
+	padding: 10px;
+}
+
+div.kujj_errorBanner_div {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60em;	
+	outline: solid #e8000d;
+	background-color: #F1F1F1;
+}
+
+div.kujj_errorBanner_content {
+	margin: 10px;
+	padding: 10px;
+}
+
+div.container {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+}
+
+div.container img {
+    float: left;
+	padding: 5px;
+	width: 40%;
+}
+
+div.container1 {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+}
+
+div.container1 img {
+    float: left;
+	padding: 5px;
+}
+
+div.kujj_footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+label {
+	font-family: "redhatdisplay";
+	font-size: 18px;
+}
+
+p {
+	font-family: "redhatdisplay";
+	font-size: 18px;
+}
+
+p.kujj_footertext {
+	font-family: "redhatdisplay";
+	font-size: 14px;
+}
+
+p.kujj_footertitle {
+	font-family: "redhatdisplay", sans-serif;
+	font-size: 18px;
+	color: #003459; 
+}
+
+p.kujj_bioname {
+	font-family: "redhatdisplay", sans-serif;
+	font-size: 24px;
+	color: #003459;
+}
+
+p.kujj_biotitle {
+	font-family: "redhatdisplay", sans-serif;
+	font-size: 18px;
+	color: #0051ba;
+}
+
+p.kujj_bioinfo {
+	font-family: "redhatdisplay", serif;
+	font-size: 16px;
+	color: #000000;
+}
+
+
+.tight {
+	margin: 0px;
+	padding: 0px;
+}
+
+div.kujj_imagegallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+
+a.kujj_image {
+	display: inline-block;
+	margin-bottom: 8px;
+	width: calc(33% - 4px);
+}
+
+table, th, td {
+	border: 1px solid;
+	border-collapse: collapse;
+	font-family: "redhatdisplay";
+	font-size: 18px;
+}
+
+.monospace {
+	font-family: "cmu-mono";
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.gallery-item > img {
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+li {
+	font-family: "redhatdisplay";
+	font-size: 18px;
+}
+
+@media only screen and (max-width: 450px) {
+	
+	.kujj_all {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	}
+	
+	.kujj_all::before {
+	content: "";
+	position: absolute;
+	width: 500%;
+	height: 500%;
+	top: -250%;
+	left: -250%;
+	z-index: -1;
+	background-image: url("assets/images/shadow.svg");
+	background-repeat: repeat;
+	background-size: 20em;
+	transform: rotate(-10deg);
+	}
+	
+	div.kujj_content_div {
+		border-left: 0px;
+		border-right: 0px;
+		padding: 0.4em;
+	}
+	
+    li.kujj_navitem {
+        display: block;
+		padding: 5px;
+    }
+	li.kujj_footeritem {
+        display: block;
+		padding: 5px;
+    }
+	div.kujj_inline {
+		display: block;
+	}
+	div.container {
+		display: block;
+	}
+	
+	div.container img {
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 90%;
+		display: block;
+	}
+	
+	div.container1 {
+		display: inline-block;
+		
+	}
+	
+	div.container1 img {
+		margin: auto;
+		display: inline-block;
+	}
+	
+
+	
+	a.kujj_image {
+		display: inline-block;
+		margin-bottom: 8px;
+		width: calc(50% - 6px);
+	}
+	
+	input[type=number] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+	}
+
+	input[type=text] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+	}
+	
+	input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+	}
+
+	input[type=email] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+	}
+}
